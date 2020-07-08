@@ -48,5 +48,4 @@ Dimension loads are often done with the truncate-insert pattern where the target
 
 3. Data Quality Operator
 
-The final operator to create is the data quality operator, which is used to run checks on the data itself. The operator's main functionality is to receive one or more SQL based test cases along with the expected results and execute the tests. For each the test, the test result and expected result needs to be checked and if there is no match, the operator should raise an exception and the task should retry and fail eventually.
-For example one test could be a SQL statement that checks if certain column contains NULL values by counting all the rows that have NULL in the column. I do not want to have any NULLs so expected result would be 0 and the test would compare the SQL statement's outcome to the expected result.
+Data quality operator is used to run checks on the data itself. The  main functionality is to receive one or more SQL based test cases along with the expected results and execute the tests. For each the test, the test result and expected result needs to be checked and if there is no match, the operator should raise an exception and the task should retry and fail eventually.
