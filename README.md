@@ -32,7 +32,7 @@ load_songplays_fact_table >> load_time_dimension_table >> run_quality_checks
 
 run_quality_checks >> end_execution
 
-### Building the operators
+## Building the operators
 I built different operators that will stage the data, transform the data, and run checks on data quality.
 
 1. Stage Operator:
